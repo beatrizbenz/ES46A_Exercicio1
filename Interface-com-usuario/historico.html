@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../recursos-do-sistema/style.css" />
+    <title>Histórico</title>
+  </head>
+  <body>
+    <!-- Histórico -->
+    <h2>Historico de Medias</h2>
+    <ul id="historyList"></ul>
+
+    <script type="module">
+      document.addEventListener("DOMContentLoaded", () => {
+        // Chama a função para exibir o histórico
+        displayHistory();
+
+        // Adiciona um evento ao botão para limpar o histórico
+        document
+          .getElementById("limparHistorico")
+          .addEventListener("click", limparHistorico);
+      });
+    </script>
+    <script src="../recursos-do-sistema/app.js"></script>
+    <script src="../logica-de-negocios/historico.js"></script>
+
+    <!-- Botão para limpar o histórico -->
+    <button id="limparHistorico">Limpar Histórico</button>
+
+    <!-- Botão de voltar para a página inicial -->
+    <a href="../Interface-com-usuario/home.html"
+      >Voltar para a Página Inicial</a
+    >
+  </body>
+</html>
